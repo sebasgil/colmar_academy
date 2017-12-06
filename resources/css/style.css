@@ -1,0 +1,79 @@
+.box {
+  border: 1px dashed black;
+}
+
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Header Styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  /*border: 1px dashed black;*/
+}
+
+.logo span:last-child{
+  font-weight: 400;
+  color: gray;
+  padding-left: 0.25rem;
+}
+
+header nav ul li {
+  display: inline;
+  padding-left: 1rem;
+  color: gray;
+  /*border: 1px dashed black;*/
+}
+
+header nav ul li:last-child {
+  padding-right: 1.33rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px){
+
+}
+
+/* Banner */
+
+@media only screen and (max-width: 480px){
+
+}
+
+/* Main Content */
+
+@media only screen and (max-width: 480px){
+
+}
+
+/* Courses */
+
+@media only screen and (max-width: 480px){
+
+}
+
+/* Theses */
+
+@media only screen and (max-width: 480px){
+
+}
+
+/* Footer */
+
+@media only screen and (max-width: 480px){
+
+}
