@@ -56,7 +56,6 @@ nav a {
 
 #banner {
   display: flex;
-  border: 1px dashed black;
 }
 
 #banner .box:first-child {
@@ -72,7 +71,6 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px dashed red;
 }
 
 
@@ -83,16 +81,35 @@ nav a {
 /* Main Content */
 
 #main {
-  display: flex
+  display: flex;
 }
 
-#main .section:last-child {
+#main .box:first-child {
+  width: 60%;
+  /*padding: 1.7rem 1.33rem;*/
+}
+
+#main img {
+  width: 90%;
+}
+
+
+#main .container {
   display: flex;
   flex-direction: column;
+  width: 40%;
+  border: 1px dashed red;
 }
 
 #main .container .box {
   display: flex;
+  border: 1px dashed black;
+  width: 100%;
+}
+
+#main .container .box img {
+  /*width: 35%;*/
+  /*height: auto;*/
 }
 
 @media only screen and (max-width: 480px){
