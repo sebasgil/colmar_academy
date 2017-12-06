@@ -1,12 +1,16 @@
-.box {
-  border: 1px dashed black;
-}
-
 /* Universal Styles */
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Helvetica", sans-serif;
+}
+
+.box {
+  /*border: 1px dashed black;*/
+}
+
+body .section:nth-child(2n + 0){
+  background-color: silver;
 }
 
 /* Header Styles */
@@ -50,11 +54,46 @@ nav a {
 
 /* Banner */
 
+#banner {
+  display: flex;
+  border: 1px dashed black;
+}
+
+#banner .box:first-child {
+  width: 60%;
+}
+
+#banner img {
+  width: 90%;
+  padding: 1.7rem 1.33rem;
+}
+
+#banner .box:last-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dashed red;
+}
+
+
 @media only screen and (max-width: 480px){
 
 }
 
 /* Main Content */
+
+#main {
+  display: flex
+}
+
+#main .section:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+#main .container .box {
+  display: flex;
+}
 
 @media only screen and (max-width: 480px){
 
