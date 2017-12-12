@@ -5,10 +5,6 @@ html {
   font-family: "Helvetica", sans-serif;
 }
 
-.box {
-  /*border: 1px dashed black;*/
-}
-
 body .section:nth-child(2n + 0){
   background-color: silver;
 }
@@ -82,13 +78,13 @@ nav a {
 
 #main {
   display: flex;
+  /*margin: 0 auto;*/
 }
 
 /*Style left side*/
 
 #main .container:first-child {
   width: 60%;
-  border: 1px dashed orange;
 }
 
 #main .container:first-child img {
@@ -108,28 +104,33 @@ nav a {
   margin-bottom: 2.0rem;
 }
 
-/*#main img {
-  width: 90%;
-}*/
+/* Style right side*/
 
-
-#main .container {
+#main .container:last-child {
   display: flex;
   flex-direction: column;
   width: 40%;
-  border: 1px dashed red;
+  border: 1px solid silver;
 }
 
 #main .container .box {
   display: flex;
-  border: 1px dashed black;
-  width: 100%;
+  border: 1px solid silver;
+  padding: 1rem;
 }
 
-#main .container .box img {
-  /*width: 35%;*/
-  /*height: auto;*/
-  width: 90%;
+#main .container .box div:first-child {
+  width: 35%;
+}
+
+#main .container .box div img {
+  width: 100%;
+  height: auto;
+}
+
+#main .container .box div:last-child {
+  width: 65%;
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 480px){
@@ -137,6 +138,10 @@ nav a {
 }
 
 /* Courses */
+
+#courses {
+  border: 1px solid silver;
+}
 
 @media only screen and (max-width: 480px){
 
