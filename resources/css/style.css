@@ -40,7 +40,7 @@ header nav ul li {
 }
 
 header nav ul li:last-child {
-  padding-right: 1.33rem;
+  padding-right: 1.5rem;
 }
 
 nav a {
@@ -64,7 +64,7 @@ nav a {
 
 #banner img {
   width: 90%;
-  padding: 1.7rem 1.33rem;
+  padding: 2.0rem 1.5rem;
 }
 
 #banner .box:last-child{
@@ -84,14 +84,33 @@ nav a {
   display: flex;
 }
 
-#main .box:first-child {
+/*Style left side*/
+
+#main .container:first-child {
   width: 60%;
-  /*padding: 1.7rem 1.33rem;*/
+  border: 1px dashed orange;
 }
 
-#main img {
+#main .container:first-child img {
   width: 90%;
+  padding: 2.0rem 1.5rem;
 }
+
+#main .container:first-child h1 {
+  margin: 2.0rem 1.5rem 1.5rem 1.5rem;
+}
+
+#main .container:first-child p {
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+#main .container:first-child p:last-child {
+  margin-bottom: 2.0rem;
+}
+
+/*#main img {
+  width: 90%;
+}*/
 
 
 #main .container {
@@ -110,6 +129,7 @@ nav a {
 #main .container .box img {
   /*width: 35%;*/
   /*height: auto;*/
+  width: 90%;
 }
 
 @media only screen and (max-width: 480px){
