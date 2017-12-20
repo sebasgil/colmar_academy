@@ -5,6 +5,7 @@ html {
   font-family: "Helvetica", sans-serif;
 }
 
+
 body .section:nth-child(2n + 0){
   background-color: silver;
 }
@@ -19,7 +20,6 @@ header {
 
 header .logo {
   display: flex;
-  /*border: 1px dashed black;*/
 }
 
 .logo span:last-child{
@@ -190,6 +190,64 @@ nav a {
 }
 
 /* Theses */
+
+#theses {
+  display:flex;
+  flex-direction: column;
+}
+
+#theses h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+#theses .content {
+  display: flex;
+}
+
+/* Style Left Side */
+
+#theses .container:first-child {
+  width: 60%;
+  padding: 2.0rem 1.5rem;
+}
+
+#theses .container video {
+  width: 100%;
+  height: auto;
+
+}
+
+/* Style Right Side */
+
+#theses .container:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#theses .container .box {
+  display: flex;
+  padding: 1rem;
+}
+
+#theses .container .box div:first-child {
+  width: 35%;
+}
+
+#theses .container .box div img {
+  width: 100%;
+  height: auto;
+}
+
+#theses .container .box div:last-child {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+#theses .container .box:first-child {
+  background-color: silver;
+}
 
 @media only screen and (max-width: 480px){
 
