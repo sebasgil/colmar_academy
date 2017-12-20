@@ -78,7 +78,6 @@ nav a {
 
 #main {
   display: flex;
-  /*margin: 0 auto;*/
 }
 
 /*Style left side*/
@@ -149,6 +148,41 @@ nav a {
 
 #courses {
   border: 1px solid silver;
+}
+
+#courses h1 {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+#courses .container {
+  margin: 0rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#courses .box {
+  background-color: white;
+  flex: 1 1 25%; /* fiddle with baseline percentage to get 3x3 alignment! */
+  margin: 2rem;
+}
+
+#courses .container .box div img {
+  width: 100%;
+  height: auto;
+}
+
+#courses .box h2 {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+#courses .box p {
+  color: gray;
+  padding: 0.5rem 1rem;
+}
+
+#courses .box p:last-child {
+  padding-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 480px){
