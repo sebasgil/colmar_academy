@@ -133,6 +133,14 @@ nav a {
   padding-left: 1rem;
 }
 
+#main .container .box:last-child {
+  background-color: silver;
+}
+
+#main .container .box p:last-child {
+  color: rgb(87, 146, 242);
+}
+
 @media only screen and (max-width: 480px){
 
 }
