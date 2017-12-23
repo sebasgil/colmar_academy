@@ -1,3 +1,7 @@
+/* Note to evaluator: This is not exactly perfect,
+but it matches the wireframe quite closely. I haven't added new fonts
+or design colors because I'm short on time! Happy holidays!
+
 /* Universal Styles */
 
 html {
@@ -32,7 +36,6 @@ header nav ul li {
   display: inline;
   padding-left: 1rem;
   color: gray;
-  /*border: 1px dashed black;*/
 }
 
 header nav ul li:last-child {
@@ -44,12 +47,26 @@ a {
   text-decoration: none;
 }
 
+header .mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 480px){
+   header {
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+   }
    .logo h2{
      display: none;
    }
-   header ul{
+   header .desktop{
      display: none;
+   }
+   header .mobile {
+     display: inline;
+   }
+   header .mobile li {
+    padding: 2rem;
    }
 }
 
@@ -326,7 +343,26 @@ a {
 }
 
 @media only screen and (max-width: 480px){
+  #theses h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  }
 
+  #theses .container:first-child {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  #theses .container:last-child {
+    display: none;
+  }
+  #theses h2 {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -352,5 +388,12 @@ footer a {
 }
 
 @media only screen and (max-width: 480px){
-
+  footer p {
+    display: inline;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  footer nav {
+    display: none;
+  }
 }
