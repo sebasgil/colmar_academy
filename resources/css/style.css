@@ -244,7 +244,25 @@ a {
 }
 
 @media only screen and (max-width: 480px){
-
+  #courses {
+    background-color: white;
+  }
+  #courses h1 {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  #courses .container {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  #courses img,p {
+    display: none;
+  }
+  #courses .box {
+    background-color: silver;
+    margin: 0.5rem auto;
+    width: 90%;
+  }
 }
 
 /* Theses */
