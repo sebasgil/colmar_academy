@@ -102,78 +102,104 @@ a {
     align-items: center;
   }
   #banner p {
-    width: 80%;
+    width: 85%;
+
   }
 }
 
-/* Main Content */
+/* Jumbotron */
 
-#main {
+#jumbotron {
   display: flex;
 }
 
 /*Style left side*/
 
-#main .container:first-child {
+#jumbotron .container:first-child {
   width: 60%;
 }
 
-#main .container:first-child img {
+#jumbotron .container:first-child img {
   width: 90%;
   padding: 2.0rem 1.5rem;
 }
 
-#main .container:first-child h1 {
+#jumbotron .container:first-child h1 {
   margin: 2.0rem 1.5rem 1.5rem 1.5rem;
 }
 
-#main .container:first-child p {
+#jumbotron .container:first-child p {
   margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
-#main .container:first-child p:last-child {
+#jumbotron .container:first-child p:last-child {
   margin-bottom: 2.0rem;
 }
 
 /* Style right side*/
 
-#main .container:last-child {
+#jumbotron .container:last-child {
   display: flex;
   flex-direction: column;
   width: 40%;
   border: 1px solid silver;
 }
 
-#main .container .box {
+#jumbotron .container .box {
   display: flex;
   border: 1px solid silver;
   padding: 1rem;
 }
 
-#main .container .box div:first-child {
+#jumbotron .container .box div:first-child {
   width: 35%;
 }
 
-#main .container .box div img {
+#jumbotron .container .box div img {
   width: 100%;
   height: auto;
 }
 
-#main .container .box div:last-child {
+#jumbotron .container .box div:last-child {
   width: 65%;
   padding-left: 1rem;
 }
 
-#main .container .box:last-child {
+#jumbotron .container .box:last-child {
   background-color: silver;
 }
 
-#main .container .box p:last-child {
+#jumbotron .container .box p:last-child {
   color: rgb(87, 146, 242);
 }
 
-@media only screen and (max-width: 480px){
+#jumbotron .mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 480px){
+  #jumbotron .container:first-child{
+    display: none;
+  }
+  #jumbotron .desktop {
+    display: none;
+  }
+  #jumbotron .mobile {
+    display: inline-block;
+  }
+  #jumbotron .container:last-child {
+    width: 100%;
+  }
+  #jumbotron .container .box {
+    flex-direction: column;
+    border: none;
+  }
+  #jumbotron .container .box div:first-child {
+    width: 100%;
+  }
+  #jumbotron .container .box:last-child {
+    background-color: white;
+  }
 }
 
 /* Courses */
