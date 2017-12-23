@@ -45,7 +45,12 @@ a {
 }
 
 @media only screen and (max-width: 480px){
-
+   .logo h2{
+     display: none;
+   }
+   header ul{
+     display: none;
+   }
 }
 
 /* Banner */
@@ -78,7 +83,27 @@ a {
 }
 
 @media only screen and (max-width: 480px){
-
+  #banner {
+    flex-direction: column;
+  }
+  #banner .box:first-child {
+    width: 100%;
+  }
+  #banner h1,h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #banner img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  #banner .box:last-child {
+    align-items: center;
+  }
+  #banner p {
+    width: 80%;
+  }
 }
 
 /* Main Content */
